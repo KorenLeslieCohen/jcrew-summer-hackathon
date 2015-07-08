@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset=utf-8>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title></title>
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/jpg" href="favicon.jpg" />
+</head>
+<body>
+    
+    <div class="body" id="body">
+      <!-- loop through categories -->
+      <% @categories.each do |key, attributes| %>
+        <div class="blog">
+          <!-- <a href=<%#= attributes.url %> target="_blank"><%#= attributes.name %></a><br> -->
+          <div class="blog-social">
+          </div>
+          <% attributes.function.each do |pic| %>
+            <div class="main-image">
+              <a href=<%= attributes.url %> target="_blank"><img src=<%= pic %>></a>
+<!--               <div class="hover-image">
+                <a href=<%#= attributes.url %> target="_blank"><img src=<%#= pic %>></a>
+              </div> -->
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+
+    </div>
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</body>
+</html>
