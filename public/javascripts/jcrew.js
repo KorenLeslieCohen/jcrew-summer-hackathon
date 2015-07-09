@@ -58,7 +58,14 @@ $(document).ready(function () {
 
   // click generate another to generate another random outfit
   $('div').on('click', '.another', function() {
-    console.log("inside another click");
+    var self = $(this);
+    if (self.closest('div[id]').html() === $('#women').html()) {
+      $('.women-tops').html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(500);
+      $('.women-bottoms').html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).fadeIn(500);
+    } else if (self.closest('div[id]').html() === $('#men').html()) {
+      $('.men-tops').html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(500);
+      $('.men-bottoms').html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(500);
+    } 
   });
 
 });
