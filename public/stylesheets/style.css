@@ -26,3 +26,9 @@ img {
   width: 250px;
   height: auto;
 }
+
+/* line 29, ../sass/style.scss */
+#women,
+#men {
+  float: left;
+}

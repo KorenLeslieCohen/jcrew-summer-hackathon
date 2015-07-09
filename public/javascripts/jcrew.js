@@ -30,6 +30,7 @@ $(document).ready(function () {
     }
   });
 
+  // log array contents
   console.log("womenTopsArr outside: " + womenTopsArr);
   console.log("womenBottomsArr outside: " + womenBottomsArr);
   console.log("menTopsArr outside: " + menTopsArr);
@@ -37,7 +38,12 @@ $(document).ready(function () {
 
   $('.products').hide();
 
+  // random women's outfit
   $('.women-tops').append(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]);
   $('.women-bottoms').append(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]);
+
+  // random men's outfit
+  $('.men-tops').append(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]);
+  $('.men-bottoms').append(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]);
 
 });
