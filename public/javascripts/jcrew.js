@@ -14,9 +14,8 @@ $(document).ready(function () {
     menBottomsArr = [];
 
   $('.product').each(function (){
-    var self = $(this);
-      // that = self.html();
-    if (($(this).html().includes("womens_category/sweaters")) || ($(this).html().includes("womens_category/knitstees")) || ($(this).html().includes("womens_category/shirtsandtops2"))) {
+    // console.log($(this).html().toString());
+    if ( ($(this).html().toString().includes("womens_category/sweaters")) || ($(this).html().toString().includes("womens_category/knitstees")) || ($(this).html().toString().includes("womens_category/shirtsandtops2"))) {
       womenTopsArr.push($(this).html());
       return womenTopsArr;
     } else if (($(this).html().includes("womens_category/pants")) || ($(this).html().includes("womens_category/denim"))) {
