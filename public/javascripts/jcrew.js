@@ -5,7 +5,7 @@ $(document).ready(function () {
   $('.products, #women, #men').hide();
 
   // preloader
-  // $('.preloader').delay(2500).fadeOut(500); 
+  $('.preloader').delay(1500).fadeOut(750); 
 
   // separate women's and men's tops/bottoms into arrays
   var womenTopsArr = [],
@@ -40,7 +40,7 @@ $(document).ready(function () {
   // click female to generate random women's outfit
   $('div').on('click', '.female', function() {
     $('#men').hide();
-    $('#gender').fadeOut(300);
+    $('#gender').hide();
     $('#women').fadeIn(500);
     $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(500);
     $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).fadeIn(500);
@@ -49,21 +49,21 @@ $(document).ready(function () {
   // click male to generate random men's outfit
   $('div').on('click', '.male', function() {
     $('#women').hide();
-    $('#gender').fadeOut(300);
-    $('#men').fadeIn(500);
-    $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(500);
-    $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(500);
+    $('#gender').hide();
+    $('#men').fadeIn(750);
+    $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(750);
+    $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(750);
   });
 
   // click generate another to generate another random outfit
   $('div').on('click', '.another', function() {
     var self = $(this);
     if (self.closest('div[id]').html() === $('#women').html()) {
-      $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(500);
-      $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).fadeIn(500);
+      $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(750);
+      $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).fadeIn(750);
     } else if (self.closest('div[id]').html() === $('#men').html()) {
-      $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(500);
-      $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(500);
+      $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(750);
+      $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(750);
     } 
   });
 
