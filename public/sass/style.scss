@@ -1,11 +1,13 @@
 $pink: #E10573;
+$blue: #1867E7;
 $mainFont: 'Pacifico';
-$buttonBackground: #f2f2f2;
 
 @import url('http://fonts.googleapis.com/css?family=Pacifico');
 
 body {
     margin: 0;
+    /*background: url(https://s3.amazonaws.com/splashklc/grey.jpg);*/
+    /*background-size: cover;*/
 }
 
 /*----preloader----*/
@@ -38,14 +40,10 @@ body {
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    /*background: pink;*/
 }
 
 /*----buttons----*/
 .button {
-    padding: 10px;
-    margin: 10px auto;
-    /*width: 200px;*/
     color: #aaa;
     font-size: 20px;
     cursor: pointer;
@@ -57,7 +55,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    /*background: yellow;*/
 
     h1 {
         font-family: $mainFont;
@@ -78,36 +75,71 @@ body {
     }
 
     .button {
-        border: 3px solid $pink;
+        padding: 10px;
+        margin: 10px auto;
         height: 80px;
         line-height: 80px;
         width: 60%;
-        background-color: $buttonBackground;
         font-family: 'Arial';
+    }
+
+    .female {
+        border: 2px solid $pink;
         color: $pink;
     }
 
-    .female,
     .male {
-        /*display: inline;*/
+        border: 2px solid $blue;
+        color: $blue;
     }
 }
 
 /*----outfits----*/
 #women,
 #men {
-    width: 250px;
+    width: 320px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 
     img {
-        width: 250px;
+        border: 1px solid #ccc;
+        width: 320px;
         height: auto;
-        /*border-radius: 25%;*/
+        margin: 7px 0;
     }
 
     .button {
+        width: 320px;
+        height: 60px;
+        line-height: 60px;
+        margin: 7px 0;
+        font-size: 16px;
+    }
+}
 
+#women {
+
+    .button {
+        border: 1px solid $pink;
+        color: $pink;
+        font-family: 'Arial';
+    }
+
+    .male {
+        color: $blue;
+    }
+}
+
+#men {
+
+    .button {
+        border: 1px solid $blue;
+        color: $blue;
+        font-family: 'Arial';
+    }
+
+    .female {
+        color: $pink;
     }
 }

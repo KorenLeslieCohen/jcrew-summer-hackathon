@@ -42,28 +42,28 @@ $(document).ready(function () {
     $('#men').hide();
     $('#gender').hide();
     $('#women').fadeIn(500);
-    $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(500);
-    $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).fadeIn(500);
+    $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).show();
+    $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).show();
   });
 
   // click male to generate random men's outfit
   $('div').on('click', '.male', function() {
     $('#women').hide();
     $('#gender').hide();
-    $('#men').fadeIn(750);
-    $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(750);
-    $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(750);
+    $('#men').fadeIn(500);
+    $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).show();
+    $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).show();
   });
 
   // click generate another to generate another random outfit
   $('div').on('click', '.another', function() {
     var self = $(this);
     if (self.closest('div[id]').html() === $('#women').html()) {
-      $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(750);
-      $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).fadeIn(750);
+      $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).show();
+      $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).show();
     } else if (self.closest('div[id]').html() === $('#men').html()) {
-      $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(750);
-      $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(750);
+      $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).show();
+      $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).show();
     } 
   });
 
