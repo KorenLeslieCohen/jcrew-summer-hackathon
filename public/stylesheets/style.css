@@ -1,0 +1,22 @@
+/*----preloader----*/
+/* line 2, ../sass/style.scss */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: 99999;
+}
+/* line 11, ../sass/style.scss */
+.preloader .preloader-gif {
+  display: block;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -200px;
+  background: url("../preloader.gif") no-repeat;
+}
