@@ -6,9 +6,15 @@ This is a Sinatra app written in Ruby. The app scrapes several categories on the
 
 ## Usage
 
-Presently, this app must be used on CHROME ONLY. User should navigate to <a href="http://help-me-jcrew.herokuapp.com" target="_blank">Help me, J.Crew!</a> and wait for site to load. User should choose "female" or "male" button. 
+Presently, this app must be used on CHROME ONLY. 
 
-User will then be directed to outfits page where user can generate additional random outfits. User can also switch from female to male outfits.
+User should navigate to <a href="http://help-me-jcrew.herokuapp.com" target="_blank">Help me, J.Crew!</a> and wait for site to load. 
+
+User should click "female" or "male" button. 
+
+User will be directed to outfits page where user can generate additional random outfits. 
+
+User can also switch from female to male outfits.
 
 User can click on all images which will redirect user to the appropriate product page on the J.Crew website so user can purchase item. 
 
