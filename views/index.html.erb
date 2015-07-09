@@ -18,12 +18,11 @@
     <div class="body" id="body">
       <!-- loop through categories -->
       <% @categories.each do |key, attributes| %>
-        <div class="product">
-          <!-- loop through products -->
-          <% attributes.get_links.zip(attributes.get_links_img).each do |link, image| %>
-            <a href="<%= link %>" target="_blank"><img src="<%= image %>"></a>
-          <% end %>
-        </div>
+        <% attributes.get_links.zip(attributes.get_links_img).each do |link, image| %>
+          <div class="product">
+            <p><a href="<%= link %>" target="_blank"><img src="<%= image %>"></a></p>
+          </div>
+        <% end %>
       <% end %>
 
     </div>

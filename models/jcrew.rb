@@ -30,8 +30,8 @@ class JcrewCategory
         product_links << link 
       end
     end
-    if product_links.count > 15
-      product_links[0..14]
+    if product_links.count > 5
+      product_links[0..4]
     else
       product_links
     end
@@ -48,8 +48,8 @@ class JcrewCategory
         src_jpg_links << link 
       end
     end
-    if src_jpg_links.count > 15
-      src_jpg_links[0..14]
+    if src_jpg_links.count > 5
+      src_jpg_links[0..4]
     else
       src_jpg_links
     end
