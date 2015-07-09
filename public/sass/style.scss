@@ -11,6 +11,8 @@ body {
 
 a {
     text-decoration: none;
+    font-family: $mainFont;
+    font-size: 18px;
 }
 
 /*----preloader----*/
@@ -149,6 +151,7 @@ a {
 
         span {
             font-family: $mainFont;
+            font-size: 18px;
         }
     }
 
