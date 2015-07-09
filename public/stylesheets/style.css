@@ -1,5 +1,5 @@
 /*----preloader----*/
-/* line 2, ../sass/style.scss */
+/* line 3, ../sass/style.scss */
 .preloader {
   position: fixed;
   top: 0;
@@ -9,14 +9,20 @@
   background: #fff;
   z-index: 99999;
 }
-/* line 11, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 .preloader .preloader-gif {
   display: block;
-  width: 400px;
-  height: 300px;
+  width: 700px;
+  height: 700px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -150px 0 0 -200px;
+  margin: -350px 0 0 -350px;
   background: url("../preloader.gif") no-repeat;
+}
+
+/* line 24, ../sass/style.scss */
+img {
+  width: 250px;
+  height: auto;
 }
