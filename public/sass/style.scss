@@ -6,8 +6,7 @@ $mainFont: 'Pacifico';
 
 body {
     margin: 0;
-    /*background: url(https://s3.amazonaws.com/splashklc/grey.jpg);*/
-    /*background-size: cover;*/
+    background: url('../grey_stripes.jpg') repeat;
 }
 
 /*----preloader----*/
@@ -44,9 +43,8 @@ body {
 
 /*----buttons----*/
 .button {
-    color: #aaa;
-    font-size: 20px;
     cursor: pointer;
+    background: #fff;
 }
 
 /*----choose gender----*/
@@ -67,7 +65,7 @@ body {
     }
 
     img {
-        border: 3px solid $pink;
+        border: 2px solid #ccc;
         width: 95%;
         height: auto;
         margin-right: auto;
@@ -80,7 +78,9 @@ body {
         height: 80px;
         line-height: 80px;
         width: 60%;
+        min-width: 300px;
         font-family: 'Arial';
+        font-size: 20px;
     }
 
     .female {
@@ -95,26 +95,50 @@ body {
 }
 
 /*----outfits----*/
-#women,
-#men {
-    width: 320px;
+
+#outfits {
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
+    background: #fff;
+    min-height: 100vh;
+}
+
+#women,
+#men {
+    width: 100%;
     text-align: center;
 
-    img {
-        border: 1px solid #ccc;
-        width: 320px;
-        height: auto;
-        margin: 7px 0;
+    h5 {
+        font-family: $mainFont;
+        font-size: 30px;
     }
 
-    .button {
+    p {
+        font-family: 'Arial';
+    }
+
+    .gender-container{
         width: 320px;
-        height: 60px;
-        line-height: 60px;
-        margin: 7px 0;
-        font-size: 16px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+
+
+        img {
+            border: 1px solid #ccc;
+            width: 320px;
+            height: auto;
+            margin: 7px 0;
+        }
+
+        .button {
+            width: 320px;
+            height: 60px;
+            line-height: 60px;
+            margin: 7px 0;
+            font-size: 16px;
+        }
     }
 }
 
@@ -129,6 +153,22 @@ body {
     .male {
         color: $blue;
     }
+
+    h5 {
+        span {
+            color: $pink;
+        }
+    }
+
+    p {
+        span {
+            color: $pink;
+        }
+    }
+
+    a {
+        color: $pink;
+    }
 }
 
 #men {
@@ -141,5 +181,21 @@ body {
 
     .female {
         color: $pink;
+    }
+
+    h5 {
+        span {
+            color: $blue;
+        }
+    }
+
+    p {
+        span {
+            color: $blue;
+        }
+    }
+
+    a {
+        color: $blue;
     }
 }

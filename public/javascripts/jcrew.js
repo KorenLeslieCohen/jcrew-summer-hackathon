@@ -2,7 +2,7 @@ console.log("jcrew.js");
 
 $(document).ready(function () {
 
-  $('.products, #women, #men').hide();
+  $('.products, #outfits, #women, #men').hide();
 
   // preloader
   // $('.preloader').delay(1500).fadeOut(750); 
@@ -41,6 +41,7 @@ $(document).ready(function () {
   $('div').on('click', '.female', function() {
     $('#men').hide();
     $('#gender').hide();
+    $('#outfits').show();
     $('#women').fadeIn(500);
     $('.women-tops').hide().html(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).show();
     $('.women-bottoms').hide().html(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).show();
@@ -50,6 +51,7 @@ $(document).ready(function () {
   $('div').on('click', '.male', function() {
     $('#women').hide();
     $('#gender').hide();
+    $('#outfits').show();
     $('#men').fadeIn(500);
     $('.men-tops').hide().html(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).show();
     $('.men-bottoms').hide().html(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).show();
