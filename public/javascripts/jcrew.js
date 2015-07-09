@@ -14,19 +14,19 @@ $(document).ready(function () {
     menBottomsArr = [];
 
   $('.product').each(function (){
-    var self = $(this),
-      that = self.html();
-    if ((that.includes("womens_category/sweaters")) || (that.includes("womens_category/knitstees")) || (that.includes("womens_category/shirtsandtops2"))) {
-      womenTopsArr.push(that);
+    var self = $(this);
+      // that = self.html();
+    if (($(this).html().includes("womens_category/sweaters")) || ($(this).html().includes("womens_category/knitstees")) || ($(this).html().includes("womens_category/shirtsandtops2"))) {
+      womenTopsArr.push($(this).html());
       return womenTopsArr;
-    } else if ((that.includes("womens_category/pants")) || (that.includes("womens_category/denim"))) {
-      womenBottomsArr.push(that);
+    } else if (($(this).html().includes("womens_category/pants")) || ($(this).html().includes("womens_category/denim"))) {
+      womenBottomsArr.push($(this).html());
       return womenBottomsArr;
-    } else if ((that.includes("mens_category/shirts")) || (that.includes("mens_category/sweaters")) || (that.includes("mens_category/teespolos2"))) {
-      menTopsArr.push(that);
+    } else if (($(this).html().includes("mens_category/shirts")) || ($(this).html().includes("mens_category/sweaters")) || ($(this).html().includes("mens_category/teespolos2"))) {
+      menTopsArr.push($(this).html());
       return menTopsArr;
-    } else if ((that.includes("mens_category/pants")) || (that.includes("mens_category/shorts"))) {
-      menBottomsArr.push(that);
+    } else if (($(this).html().includes("mens_category/pants")) || ($(this).html().includes("mens_category/shorts"))) {
+      menBottomsArr.push($(this).html());
       return menBottomsArr;
     }
   });
