@@ -1,10 +1,11 @@
-/* line 1, ../sass/style.scss */
+@import url("http://fonts.googleapis.com/css?family=Pacifico");
+/* line 7, ../sass/style.scss */
 body {
   margin: 0;
 }
 
 /*----preloader----*/
-/* line 7, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 .preloader {
   position: fixed;
   top: 0;
@@ -14,7 +15,7 @@ body {
   background: #fff;
   z-index: 99999;
 }
-/* line 16, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .preloader .preloader-gif {
   display: block;
   width: 700px;
@@ -26,70 +27,72 @@ body {
   background: url("../preloader.gif") no-repeat;
 }
 
-/*----nav----*/
-/*nav {
-    position: fixed;
-    background: #000;
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
-    z-index: 999;
-
-    h1 {
-        color: #fff;
-        font-size: 50px;
-    }
-}*/
 /*---container---*/
-/* line 46, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .container {
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  background: pink;
+  /*background: pink;*/
 }
 
 /*----buttons----*/
-/* line 55, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .button {
-  border: 1px solid #aaa;
   padding: 10px;
   margin: 10px auto;
-  width: 200px;
+  /*width: 200px;*/
   color: #aaa;
   font-size: 20px;
   cursor: pointer;
 }
 
 /*----choose gender----*/
-/* line 66, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 #gender {
-  width: 90%;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  background: yellow;
+  /*background: yellow;*/
 }
-/* line 73, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 #gender h1 {
+  font-family: "Pacifico";
+  font-size: 50px;
+}
+/* line 67, ../sass/style.scss */
+#gender h3 {
+  font-family: "Pacifico";
   font-size: 30px;
 }
-/* line 78, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 #gender img {
-  width: 90%;
+  border: 3px solid #E10573;
+  width: 95%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 89, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
+#gender .button {
+  border: 3px solid #E10573;
+  height: 80px;
+  line-height: 80px;
+  width: 60%;
+  background-color: #f2f2f2;
+  font-family: 'Arial';
+  color: #E10573;
+}
+/* line 90, ../sass/style.scss */
 #gender .female,
 #gender .male {
   /*display: inline;*/
 }
 
 /*----outfits----*/
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 #women,
 #men {
   width: 250px;
@@ -97,7 +100,7 @@ body {
   margin-left: auto;
   text-align: center;
 }
-/* line 107, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 #women img,
 #men img {
   width: 250px;

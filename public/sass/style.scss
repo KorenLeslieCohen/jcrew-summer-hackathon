@@ -1,3 +1,9 @@
+$pink: #E10573;
+$mainFont: 'Pacifico';
+$buttonBackground: #f2f2f2;
+
+@import url('http://fonts.googleapis.com/css?family=Pacifico');
+
 body {
     margin: 0;
 }
@@ -25,22 +31,6 @@ body {
     }  
 }
 
-/*----nav----*/
-
-/*nav {
-    position: fixed;
-    background: #000;
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
-    z-index: 999;
-
-    h1 {
-        color: #fff;
-        font-size: 50px;
-    }
-}*/
-
 /*---container---*/
 
 .container {
@@ -48,15 +38,14 @@ body {
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    background: pink;
+    /*background: pink;*/
 }
 
 /*----buttons----*/
 .button {
-    border: 1px solid #aaa;
     padding: 10px;
     margin: 10px auto;
-    width: 200px;
+    /*width: 200px;*/
     color: #aaa;
     font-size: 20px;
     cursor: pointer;
@@ -64,26 +53,38 @@ body {
 
 /*----choose gender----*/
 #gender {
-    width: 90%;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    background: yellow;
+    /*background: yellow;*/
 
     h1 {
-        font-size: 30px;
+        font-family: $mainFont;
+        font-size: 50px;
+    }
 
+    h3 {
+        font-family: $mainFont;
+        font-size: 30px; 
     }
 
     img {
-        width: 90%;
+        border: 3px solid $pink;
+        width: 95%;
         height: auto;
         margin-right: auto;
         margin-left: auto;
     }
 
     .button {
-
+        border: 3px solid $pink;
+        height: 80px;
+        line-height: 80px;
+        width: 60%;
+        background-color: $buttonBackground;
+        font-family: 'Arial';
+        color: $pink;
     }
 
     .female,
@@ -100,13 +101,13 @@ body {
     margin-left: auto;
     text-align: center;
 
-    .button {
-
-    }
-
     img {
         width: 250px;
         height: auto;
         /*border-radius: 25%;*/
+    }
+
+    .button {
+
     }
 }
