@@ -18,6 +18,8 @@ Some browsers, such as Firefox, do not recognize certain JavaScript functions an
 
 Site takes several seconds to load due to the scraping. Ideally, a chron job would be used to seed the database, but this app was built in less than one day so there was no time.
 
+Needs media queries.
+
 ## Author
 
 Help me, J.Crew! was built by Koren Leslie Cohen.
