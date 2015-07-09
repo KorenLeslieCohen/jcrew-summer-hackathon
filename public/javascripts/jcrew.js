@@ -16,7 +16,6 @@ $(document).ready(function () {
   $('.product').each(function (){
     var self = $(this),
       that = self.html();
-
     if ((that.includes("womens_category/sweaters")) || (that.includes("womens_category/knitstees")) || (that.includes("womens_category/shirtsandtops2"))) {
       womenTopsArr.push(that);
       return womenTopsArr;
@@ -40,7 +39,6 @@ $(document).ready(function () {
 
   // click female to generate random women's outfit
   $('div').on('click', '.female', function() {
-    console.log("inside female click");
     $('#gender').fadeOut(300);
     $('#women').fadeIn(500);
     $('.women-tops').append(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(500);
@@ -49,7 +47,6 @@ $(document).ready(function () {
 
   // click male to generate random men's outfit
   $('div').on('click', '.male', function() {
-    console.log("inside male click");
     $('#gender').fadeOut(300);
     $('#men').fadeIn(500);
     $('.men-tops').append(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(500);
