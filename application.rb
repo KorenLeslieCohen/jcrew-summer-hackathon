@@ -6,8 +6,8 @@ class Application < Sinatra::Base
   get '/' do
 
     @categories = {
-    	:women_sweaters => JcrewCategory.new("Women's Sweaters", ".arrayImg a", "https://www.jcrew.com/womens_category/sweaters.jsp", "get_links_img"),
-    	:women_pants => JcrewCategory.new("Women's Pants", ".plus_image_container a", "https://www.jcrew.com/womens_category/pants.jsp", "get_links_img")
+    	:women_sweaters => JcrewCategory.new("Women's Sweaters", ".arrayImg", ".arrayImg a", "https://www.jcrew.com/womens_category/sweaters.jsp"),
+    	:women_pants => JcrewCategory.new("Women's Pants", ".plus_image_container", ".plus_image_container a", "https://www.jcrew.com/womens_category/pants.jsp")
     }
 
     erb :"index.html"

@@ -12,21 +12,14 @@
   <link rel="icon" type="image/jpg" href="favicon.jpg" />
 </head>
 <body>
-    
+
     <div class="body" id="body">
       <!-- loop through categories -->
       <% @categories.each do |key, attributes| %>
-        <div class="blog">
-          <!-- <a href=<%#= attributes.url %> target="_blank"><%#= attributes.name %></a><br> -->
-          <div class="blog-social">
-          </div>
-          <% attributes.function.each do |pic| %>
-            <div class="main-image">
-              <a href=<%= attributes.url %> target="_blank"><img src=<%= pic %>></a>
-<!--               <div class="hover-image">
-                <a href=<%#= attributes.url %> target="_blank"><img src=<%#= pic %>></a>
-              </div> -->
-            </div>
+        <div class="product">
+          <!-- loop through products -->
+          <% attributes.get_links.zip(attributes.get_links_img).each do |link, image| %>
+            <a href="<%= link %>" target="_blank"><img src="<%= image %>"></a>
           <% end %>
         </div>
       <% end %>

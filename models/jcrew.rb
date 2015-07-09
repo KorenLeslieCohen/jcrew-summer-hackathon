@@ -6,54 +6,41 @@ require 'uri'
 
 class JcrewCategory
 
-  attr_accessor :name, :post, :url, :image_links, :all_image_links, :jpg_links, :src_jpg_links, :facebook, :twitter, :instagram, :function
+  attr_accessor :name, :links_post, :images_post, :url, :all_prod_links, :all_image_links, :product_links, :src_jpg_links
 
-  ALL_PRODUCTS = []
-
-  def initialize(name, post, url, function=nil)
+  def initialize(name, links_post, images_post, url)
     @name = name
-    @post = post
+    @links_post = links_post
+    @images_post = images_post
     @url = url
-    # @facebook = facebook
-    # @twitter = twitter
-    # @instagram = instagram
-    @image_links = []
+    @all_prod_links = []
+    @product_links = []
     @all_image_links = []
-    # @jpg_links = []
     @src_jpg_links = []
-    if function == "get_links"
-      @function = get_links
-    elsif function == "get_links_img"
-      @function = get_links_img
-    end
-    ALL_PRODUCTS << self
   end
 
-  # a href images
-  # def get_links
-  #   doc = Nokogiri::HTML(open(url))
-  #   to_scrape = doc.css(post)
-  #   image_links = to_scrape.xpath('a')
-  #   all_image_links << image_links.map {|link| link["href"]}.compact
-  #   all_image_links.each do |inner_array|
-  #     inner_array.each do |link|
-  #       jpg_links << link if link.include?(".jpg")
-  #       jpg_links << link if link.include?(".jpeg")
-  #       jpg_links << link if link.include?(".JPG")
-  #       jpg_links << link if link.include?(".JPEG")
-  #     end
-  #   end
-  #   if jpg_links.count > 15
-  #     jpg_links[0..14]
-  #   else
-  #     jpg_links
-  #   end
-  # end
+  # product links
+  def get_links
+    doc = Nokogiri::HTML(open(url))
+    to_scrape = doc.css(links_post)
+    prod_links = to_scrape.xpath('a')
+    all_prod_links << prod_links.map {|link| link["href"]}.compact
+    all_prod_links.each do |inner_array|
+      inner_array.each do |link|
+        product_links << link 
+      end
+    end
+    if product_links.count > 15
+      product_links[0..14]
+    else
+      product_links
+    end
+  end
 
-  # img src images
+  # image links
   def get_links_img
     doc = Nokogiri::HTML(open(url))
-    to_scrape = doc.css(post)
+    to_scrape = doc.css(images_post)
     image_links = to_scrape.xpath('img')
     all_image_links << image_links.map {|link| link["src"]}.compact
     all_image_links.each do |inner_array|
@@ -66,11 +53,6 @@ class JcrewCategory
     else
       src_jpg_links
     end
-    # src_jpg_links
   end
-
-  # def self.all_blogs
-  #   ALL_PRODUCTS
-  # end
 
 end
