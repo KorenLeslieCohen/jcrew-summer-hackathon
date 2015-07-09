@@ -3,7 +3,7 @@ console.log("jcrew.js");
 $(document).ready(function () {
 
   // preloader
-  $('.preloader').delay(2500).fadeOut(500); 
+  // $('.preloader').delay(2500).fadeOut(500); 
 
   // separate women's and men's tops/bottoms into arrays
   var womenTopsArr = [],
@@ -38,5 +38,6 @@ $(document).ready(function () {
   $('.products').hide();
 
   $('.women-tops').append(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]);
+  $('.women-bottoms').append(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]);
 
 });
