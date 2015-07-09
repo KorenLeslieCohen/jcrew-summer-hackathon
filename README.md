@@ -6,7 +6,7 @@ This is a Sinatra app written in Ruby.
 
 The app scrapes several categories on the J.Crew website to allow the user to generate random outfits and click on those outfits to purchase at jcrew.com.
 
-Built for the J.Crew summer hackathon. Total time < one day. 
+Built for the J.Crew summer hackathon. Total time less than one day. 
 
 ## Usage
 
