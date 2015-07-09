@@ -5,7 +5,7 @@ $(document).ready(function () {
   $('.products, #women, #men').hide();
 
   // preloader
-  $('.preloader').delay(1500).fadeOut(750); 
+  // $('.preloader').delay(1500).fadeOut(750); 
 
   // separate women's and men's tops/bottoms into arrays
   var womenTopsArr = [],
