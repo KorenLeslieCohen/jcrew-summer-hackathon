@@ -19,7 +19,7 @@ $(document).ready(function () {
     if ((that.includes("womens_category/sweaters")) || (that.includes("womens_category/knitstees")) || (that.includes("womens_category/shirtsandtops2"))) {
       womenTopsArr.push(that);
       return womenTopsArr;
-    } else if ((that.includes("womens_category/pants")) || (that.includes("womens_category/skirts")) || (that.includes("womens_category/denim"))) {
+    } else if ((that.includes("womens_category/pants")) || (that.includes("womens_category/denim"))) {
       womenBottomsArr.push(that);
       return womenBottomsArr;
     } else if ((that.includes("mens_category/shirts")) || (that.includes("mens_category/sweaters")) || (that.includes("mens_category/teespolos2"))) {
