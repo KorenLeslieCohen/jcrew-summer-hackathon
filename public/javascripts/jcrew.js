@@ -2,6 +2,8 @@ console.log("jcrew.js");
 
 $(document).ready(function () {
 
+  $('.products, #women, #men').hide();
+
   // preloader
   // $('.preloader').delay(2500).fadeOut(500); 
 
@@ -36,14 +38,27 @@ $(document).ready(function () {
   console.log("menTopsArr outside: " + menTopsArr);
   console.log("menBottomsArr outside: " + menBottomsArr);
 
-  $('.products').hide();
+  // click female to generate random women's outfit
+  $('div').on('click', '.female', function() {
+    console.log("inside female click");
+    $('#gender').fadeOut(300);
+    $('#women').fadeIn(500);
+    $('.women-tops').append(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]).fadeIn(500);
+    $('.women-bottoms').show().append(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]).fadeIn(500);
+  });
 
-  // random women's outfit
-  $('.women-tops').append(womenTopsArr[Math.floor(Math.random() * womenTopsArr.length)]);
-  $('.women-bottoms').append(womenBottomsArr[Math.floor(Math.random() * womenBottomsArr.length)]);
+  // click male to generate random men's outfit
+  $('div').on('click', '.male', function() {
+    console.log("inside male click");
+    $('#gender').fadeOut(300);
+    $('#men').fadeIn(500);
+    $('.men-tops').append(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]).fadeIn(500);
+    $('.men-bottoms').append(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]).fadeIn(500);
+  });
 
-  // random men's outfit
-  $('.men-tops').append(menTopsArr[Math.floor(Math.random() * menTopsArr.length)]);
-  $('.men-bottoms').append(menBottomsArr[Math.floor(Math.random() * menBottomsArr.length)]);
+  // click generate another to generate another random outfit
+  $('div').on('click', '.another', function() {
+    console.log("inside another click");
+  });
 
 });

@@ -25,9 +25,10 @@
 img {
   width: 250px;
   height: auto;
+  /*border-radius: 25%;*/
 }
 
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 #women,
 #men {
   float: left;
