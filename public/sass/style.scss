@@ -81,6 +81,8 @@ a {
     h1 {
         font-family: $mainFont;
         font-size: 50px;
+        margin: 0;
+        padding: 20px 15px;
     }
 
     h3 {
@@ -144,6 +146,10 @@ a {
         font-family: 'Arial';
         padding-right: 15px;
         padding-left: 15px;
+
+        span {
+            font-family: $mainFont;
+        }
     }
 
     .gender-container{
