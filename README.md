@@ -34,7 +34,7 @@ Needs media queries.
 
 Help me, J.Crew! was built by Koren Leslie Cohen.
 
+<a href="http://korenlc.com" target="_blank">Website</a><br>
+<a href="http://klcohen.com" target="_blank">Portfolio</a>
 <a href="http://linkedin.com/in/korenlesliecohen/" target="_blank">LinkedIn</a><br>
 <a href="http://twitter.com/korenlc" target="_blank">Twitter</a><br>
-<a href="http://korenlc.com" target="_blank">Blog</a><br>
-<a href="http://klcohen.com" target="_blank">Portfolio</a>
