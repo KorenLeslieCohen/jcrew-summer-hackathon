@@ -64,17 +64,19 @@ a {
         font-family: $mainFont;
         font-size: 50px;
         margin: 0;
-        padding: 20px 15px;
+        padding: 15px;
     }
 
     h3 {
         font-family: $mainFont;
-        font-size: 30px; 
+        font-size: 30px;
+        margin: 0; 
+        padding: 15px;
     }
 
     img {
         border: 2px solid #ccc;
-        width: 80%;
+        width: 70%;
         height: auto;
         margin-right: auto;
         margin-left: auto;
@@ -83,8 +85,8 @@ a {
     .button {
         padding: 10px;
         margin: 10px auto;
-        height: 50px;
-        line-height: 50px;
+        height: 40px;
+        line-height: 40px;
         width: 60%;
         min-width: 300px;
         font-family: 'Arial';
@@ -105,7 +107,7 @@ a {
 /*----outfits----*/
 
 #outfits {
-    width: 100%;
+    width: 70%;
     margin-right: auto;
     margin-left: auto;
     background: #fff;
@@ -121,13 +123,13 @@ a {
         font-family: $mainFont;
         font-size: 30px;
         margin: 0;
-        padding: 20px 15px;
+        padding-top: 10px;
     }
 
     p {
         font-family: 'Arial';
-        padding-right: 15px;
-        padding-left: 15px;
+        margin: 0;
+        padding: 0 15px;
 
         span {
             font-family: $mainFont;
@@ -136,7 +138,7 @@ a {
     }
 
     .gender-container{
-        width: 320px;
+        width: 250px;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
@@ -144,15 +146,15 @@ a {
 
         img {
             border: 1px solid #ccc;
-            width: 320px;
+            width: 250px;
             height: auto;
             margin: 7px 0;
         }
 
         .button {
-            width: 320px;
-            height: 60px;
-            line-height: 60px;
+            width: 250px;
+            height: 45px;
+            line-height: 45px;
             margin: 7px 0;
             font-size: 16px;
         }
