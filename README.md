@@ -30,6 +30,8 @@ App takes several seconds to load due to the content it's scraping. Ideally, a c
 
 Needs media queries.
 
+FOUC.
+
 ## Author
 
 Help me, J.Crew! was built by Koren Leslie Cohen.
