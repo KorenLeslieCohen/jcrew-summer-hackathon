@@ -16,19 +16,19 @@ User should navigate to <a href="http://help-me-jcrew.herokuapp.com" target="_bl
 
 User should click "female" or "male" button. 
 
-User will be directed to outfits page where user can generate additional random outfits. 
+User will be directed to outfits page where user can generate random outfits. 
 
-User can also switch from female to male outfits.
+User can switch from female to male outfits.
 
-User can click on all images which will redirect user to the appropriate product page on the J.Crew website so user can purchase item. 
+User can click on all images which will redirect user to the appropriate product page on the J.Crew website. 
 
 ## Known Issues
 
 Some browsers, such as Firefox, do not recognize certain JavaScript functions and will not load. Please use this app on CHROME ONLY.
 
-Site takes several seconds to load due to the scraping. Ideally, a chron job would be used to seed a database, but this app was built in less than one day so there was no time.
+App takes several seconds to load due to the content it's scraping. Ideally, a chron job would be used to seed a database, but there was no time.
 
-Needs media queries and additional styling.
+Needs media queries.
 
 ## Author
 
